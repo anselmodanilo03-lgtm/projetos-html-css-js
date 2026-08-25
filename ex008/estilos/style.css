@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: #0b0b15;
+    color: white;
+    height: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+header > h1 {
+    padding-top: 15px;
+    font-size: 2.5em;
+    text-indent: 1.5em;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.658);
+}
+
+menu {
+    text-align: center;
+    padding-top: 8px;
+}
+
+menu > a {
+    text-decoration: none;
+    padding-left: 25px;
+    color: white;
+}
+
+menu > a:hover {
+    color: rgb(131, 54, 131);
+    transition: .4s;
+}
+
+main {
+    background-color: #0c1426;
+    color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.363);
+}
+
+section#banner {
+    text-align: center;
+    font-family: 'Poppins';
+    padding-top: 100px;
+    height: auto;
+}
+
+section#banner > h2 {
+    font-size: 2.5em;
+}
+
+section#banner > p {
+    padding-bottom: 30px;
+}
+
+section#banner > a {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px 25px;
+    width: 160px;
+
+    text-decoration: none;
+    color: #dcdcdc;
+    background-color: #231c57;
+
+    border-radius: 5px;
+}
+
+section#banner > a:hover {
+    background-color: rgba(128, 0, 128, 0.442);
+    transition: .5s;
+}
+
+#caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#card1, #card2, #card3 {
+    background-color: white;
+    
+    width: 400px;
+    height: 600px;
+    margin: 50px;
+    border-radius: 8px 8px 4px 4px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#card1 > h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+    padding-top: 15px;
+}
+
+#card1 > p {
+    font-family: sans-serif, Arial, Helvetica;
+    text-align: justify;
+    text-indent: 1.5em;
+    color: black;
+
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#card1 > div.imagem {
+    height: 300px;
+    width: 400px;
+    background-image: url('../imagens/GTA6.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#card1 > a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    display: block;
+    background-color: #231c57;
+
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+#card1 > a:hover {
+    background-color: #0c1426;
+    transition: .3s;
+}
+
+.imagem:hover {
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+#card2 > h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+    padding-top: 15px;
+}
+
+#card2 > p {
+    font-family: sans-serif, Arial, Helvetica;
+    text-align: justify;
+    text-indent: 1.5em;
+    color: black;
+
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#card2 > div.imagem {
+    height: 300px;
+    width: 400px;
+    background-image: url('../imagens/DS2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#card2 > a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    display: block;
+    background-color: #231c57;
+
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+#card2 > a:hover {
+    background-color: #0c1426;
+    transition: .3s;
+}
+
+#card3 > h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+    padding-top: 25px;
+}
+
+#card3 > p {
+    font-family: sans-serif, Arial, Helvetica;
+    text-align: justify;
+    text-indent: 1.5em;
+    color: black;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#card3 > div.imagem {
+    height: 300px;
+    width: 400px;
+    background-image: url('../imagens/SotC.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#card3 > a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    display: block;
+    background-color: #231c57;
+
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+#card3 > a:hover {
+    background-color: #0c1426;
+    transition: .3s;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #16213e;
+    padding: 5px;
+}

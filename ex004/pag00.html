@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04</title>
+    <style>
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: lightcoral;
+        }
+
+        iframe {
+            width:  600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página 0</h1>
+    <ul>
+        <li>Para ver a página 1, clique <a href="pag01.html" target="frame">aqui</a></li>
+        <li>Para ver a página 2, clique <a href="pag02.html" target="frame">aqui</a></li>
+        <li>Para ver a página 3, clique <a href="pag03.html" target="frame">aqui</a></li>
+        <li>Para ver a página principal, clique <a href="pag00.html">aqui</a></li>
+    </ul>
+
+    <iframe name="frame" srcdoc="<p>Escolha uma das opções acima</p>" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+</body>
+</html>

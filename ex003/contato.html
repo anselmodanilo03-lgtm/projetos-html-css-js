@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Página de contato</h1>
+    <form action="../cadastro.php" method="post">
+        <fieldset>  
+            <h2>Contato</h2>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required placeholder="Seu nome completo">
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" required placeholder="Seu email">
+            </p>
+            <p>
+                <label for="iassunto">Assunto: </label>
+                <input type="text" name="assunto" id="iassunto" required placeholder="Solicitação de mensagem">
+            </p>
+            <p>
+                <label for="imensagem">Mensagem: </label>
+            </p>
+                <textarea name="mensagem" id="imensagem" required placeholder="Deixe sua mensagem sobre o assunto"></textarea>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

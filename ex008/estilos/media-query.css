@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) { /* Smartphone*/
+    header > h1 {
+        text-align: center;
+        text-indent: 0px;
+        transition: .3s;
+    }
+
+    #caixa {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.5em;
+        padding: 1.5rem 1rem;
+        box-sizing: border-box;
+    }
+
+    #card1, #card2, #card3 {
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    header > h1 {
+        transition: .3s;
+    }
+
+    #caixa {
+        height: auto;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #card1, #card2, #card3 {
+        max-width: 840px;
+    }
+}

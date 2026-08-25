@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
+            </p>
+            <p> 
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" placeholder="Seu sobrenome" required>
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" placeholder="Seu email" required>
+            </p>
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" minlength="8" maxlength="16" required placeholder="Digite uma senha">
+            </p>
+            <p>
+                <label for="iconfirmar">Confirmar senha: </label>
+                <input type="password" name="confirmar" id="iconfirmar" minlength="8" maxlength="16" required placeholder="Confirme sua senha">
+            </p>
+            <p>
+                <p>Sexo:</p>
+                <input type="radio" name="sexo" id="isxfem" value="F" required> <label for="isxfem">Feminino</label><br>
+                <input type="radio" name="sexo" id="isxmas" value="M" required> <label for="isxmas">Masculino</label>
+            </p>
+            <p> 
+                <p>Linguagens favoritas: </p>
+                <input type="checkbox" name="linguagem" id="ipython"> <label for="ilinguagem">Python</label><br>
+                <input type="checkbox" name="linguagem" id="ijs"> <label for="ilinguagem">JavaScript</label><br>
+                <input type="checkbox" name="linguagem" id="ijava"> <label for="ilinguagem">Java</label><br>
+                <input type="checkbox" name="linguagem" id="itype"> <label for="ilinguagem">TypeScript</label><br>
+                <input type="checkbox" name="linguagem" id="ics"> <label for="ilinguagem">C#</label><br>
+            </p>
+            <p>
+                <label for="iestado">Estado</label>
+                <select name="estado" id="iestado" required>
+                    <option value="" selected>------- Escolha -------</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                </select>
+            </p>
+            <p>
+                <textarea name="mensagem" id="imensagem" placeholder="Deixe uma sugestão de melhoria" rows="5" cols="30"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
