@@ -5,13 +5,14 @@
     html, body {
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden;     /* impede a rolagem horizontal */
+        overflow-x: hidden;
     }
 
-    header, main, footer, #caixa, section#banner {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
+    header > h1 {
+        text-align: center;
+        text-indent: 0px;
+        transition: .3s;
+        font-size: 2em;          /* um pouco menor no celular */
     }
 
     header > h1 {
@@ -58,7 +59,7 @@
         }
 
     }
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
     header > h1 {
