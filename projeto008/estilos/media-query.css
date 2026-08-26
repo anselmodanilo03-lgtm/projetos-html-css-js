@@ -28,6 +28,14 @@
         max-width: 420px;
         margin: 0;
         box-sizing: border-box;
+
+    #card1 img,
+#card2 img,
+#card3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
     }
 }
 
