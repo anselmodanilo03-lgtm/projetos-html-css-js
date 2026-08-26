@@ -19,8 +19,10 @@
     }
 
     #card1, #card2, #card3 {
+        position: static;
         max-width: 420px;
         width: 100%;
+        margin: 0;
         box-sizing: border-box;
     }
 }
