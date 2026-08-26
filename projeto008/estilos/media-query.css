@@ -1,7 +1,18 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px) { /* Smartphone*/
-    @media screen and (max-width: 768px) { /* Smartphone */
+
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;     /* impede a rolagem horizontal */
+    }
+
+    header, main, footer, #caixa, section#banner {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 
     header > h1 {
         text-align: center;
