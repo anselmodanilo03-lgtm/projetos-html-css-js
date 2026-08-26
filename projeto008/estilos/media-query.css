@@ -9,13 +9,16 @@
 
     #caixa {
         height: auto;
+        width: 100%;  
+        gap: 1.5em;
+        padding: 1.5rem 1rem;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        gap: 1.5em;
-        padding: 1.5rem 1rem;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     #card1, #card2, #card3 {
